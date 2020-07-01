@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        get url提交 长度有限 安全性非常低
+        post 暗文提交 长度也有限也可以设定(配置文件中)安全性较高
+     -->
+    <form action="./2.php" method="get">
+        <input type="text" name="username" value=""><br/>
+        <input type="submit" value="get提交">
+    </form>
+    <form action="./2.php" method="post">
+        <input type="text" name="username" value=""><br/>
+        <input type="submit" value="post提交">
+    </form>
+    <!-- 这里也是一个get提交 -->s
+    <a href="./2.php?page=2">下一页</a>
+</body>
+</html>
